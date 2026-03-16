@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name= "author" content="BSIR"> 
+    <title>Imagenes, Media y Tablas</title>
+</head>
+<body>
+    <!--Imagenes externas-->
+    <p> Esta imagen esta en la web </p>
+    <img src="https://thumbs.dreamstime.com/b/cactus-equinocereus-rigidissimus-arco-iris-com%C3%BAnmente-conocido-como-arcoiris-de-arizona-o-erizo-es-un-crecimiento-solitario-180734829.jpg" alt="Cactus arcoiris">
+    <!--Imagenes internas-->
+    <p>Esta imagen esta en el servidor</p>
+    <img src="imagenes/img2.avif" alt="Floracion"><!--alt es una descripcion de la imagen-->
+
+    <!--Insertar videos-->
+    <p>Este es un video</p>
+    <video src="media/video1.mp4" controls ></video> <!-- loop:reproduce hasta que se pare manualmente-->
+    
+    <!--Insertar audio-->
+    <p>Este es un audio</p>
+    <audio src="media/audio1.mp3" controls></audio> <!--Carpeta media-->
+
+    <!--Insertar tablas-->
+    <hr>
+    <h2>Tablas en html</h2>
+    <table border="1px"><!--se cambia el estilo con css-->
+        <caption>Paises</caption>
+        <tr>
+            <th>Pais</th> <!--th;Encabezado de tabla-->
+            <th>Capital</th>
+            <th>Idioma</th>
+            <th>Continente</th>
+        </tr>
+        <tr>
+            <td>España</td>
+            <td>Madrid</td>
+            <td>Español</td>
+            <td>Europa</td>
+        </tr>
+        <tr>
+            <td>Canada</td>
+            <td>Ottawa</td>
+            <td>Inglés</td>
+            <td>América</td>
+        </tr>
+        <tr>
+            <td>Japón</td>
+            <td>Tokio</td>
+            <td>Japonés</td>
+            <td>Asia</td>
+        </tr>
+        <tr>
+            <td>Portugal</td>
+            <td>Lisboa</td>
+            <td>Portugués</td>
+            <td>Europa</td>
+        </tr>
+        <tr>
+            <td>Alemania</td>
+            <td>Berlín</td>
+            <td>Alemán</td>
+            <td>Europa</td>
+        </tr>
+        <tr>
+            <td>Perú</td>
+            <td>Lima</td>
+            <td>Español</td>
+            <td>América</td>
+        </tr>
+    </table>
+    <hr>
+
+    <table border="1px">
+        <caption>Evaluaciones</caption>
+        <tr>
+            <td rowspan="2"></td>
+            <th colspan="2">1era Eval</th>
+            <th colspan="2">2da Eval</th>
+            <th colspan="2">3era Eval</th>
+        </tr>
+        <tr>
+            <td>APROBADOS</td>
+            <td>SUSPENDIDOS</td>
+            <td>APROBADOS</td>
+            <td>SUSPENDIDOS</td>
+            <td>APROBADOS</td>
+            <td>SUSPENDIDOS</td>
+        </tr>
+        <tr>
+            <td>Informática</td>
+            <td>20</td>
+            <td>2</td>
+            <td>20</td>
+            <td>20</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Matemáticas</td>
+            <td>20</td>
+            <td>2</td>
+            <td>20</td>
+            <td>20</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1px">
+        <caption>Horario</caption>
+        <tr>
+            <td>Horas</td>
+            <td>Lunes</td>
+            <td>Martes</td>
+            <td>Miércoles</td>
+            <td>Jueves</td>
+            <td>Viernes</td>
+        </tr>
+        <tr>
+        <td>8:00-9:00</td>
+        <td rowspan="2">Matemáticas</td>
+        <td>Lengua</td>
+        <td>Música</td>
+        <td></td>
+        <td rowspan="2">Matemáticas</td>
+        </tr>
+        <tr>
+            <td>9:00-10:00</td>
+            <td>Inglés</td>
+            <td>Inglés</td>
+            <td>E.Física</td>
+        </tr>
+        <tr>
+            <td>10:00-10:30</td>
+            <td colspan="5">Recreo</td>
+        </tr>
+        <tr>
+            <td>10:30-11:30</td>
+            <td>E.Física</td>
+            <td>Valenciano</td>
+            <td rowspan="2">Lengua</td>
+            <td>Informática</td>
+            <td>Inglés</td>
+        </tr>
+        <tr>
+            <td>12:30-13:30</td>
+            <td>Música</td>
+            <td>E.Física</td>
+            <td rowspan="2">Matemáticas</td>
+            <td>Informática</td>
+        </tr>
+        <tr>
+            <td>13-14:30</td>
+            <td></td>
+            <td>Informática</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+</body>
+</body>
+</html>
