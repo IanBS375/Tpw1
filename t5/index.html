@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="BSIR">
+    <title>Listas y cuestionarios</title>
+</head>
+<body>
+    <h1>Listas y formularios</h1>
+    <h2>Listas</h2>
+    <!--Listas no ordenadas-->
+    <ul>
+        <li>Queso</li>
+        <li>Huevo</li>
+        <li>Leche</li>
+        <li>Carne</li>
+        <li>Jamón</li>
+    </ul>
+    <!--Listas ordenadas-->
+    <ol type="i" start="10" reversed>
+        <li>Diez</li>
+        <li>Nueve</li>
+        <li>Ocho</li>
+        <li>Siete</li>
+    </ol>
+    <!--Listas de definiciones-->
+    <dl>
+        <dt>HTML</dt>
+        <dd>Lenguaje de marcado de hipertexto</dd>
+        <dt>CSS</dt>
+        <dd>Lenguaje de estilos de cascada</dd>
+        <dt>JS</dt>
+        <dd>Java Script</dd>
+    </dl>
+    <!--Listas anidadas-->
+    <h4>Desarrollo web</h4>
+    <ul>
+        <li>Front End
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+            </ol>
+        </li>
+        <li> Back End
+            <ol>
+                <li>NodeJS</li>
+                <li>MySQL</li>
+                <li>Devian</li>
+            </ol>
+        </li>
+    </ul>
+    <br><hr><br>
+    <h2>Formularios HTML</h2><!--Pagina dinamica-->
+    <form action="/inicio_sesion" method="post">
+        <label for="username">Nombre de usuario</label> <!--For y Id con el mismo nombre-->
+        <input type="text" id="username" name="username" placeholder="Introduce tu usuario" required><!--Name se usa en el archivo-->
+        <br><br>
+        <label for="password">Contraseña</label> <!--For y Id con el mismo nombre-->
+        <input type="password" id="password" name="password" placeholder="Introduce tu contraseña" required><!--Name se usa en el archivo-->
+        <br><br>
+        <button type="submit">Iniciar sesión</button>
+    </form>
+<br><hr><br>
+<p>Formulario con campo de entrada para varias lineas</p>
+<form action="validacion.php" method="post">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" placeholder="Introduce tu nombre">
+        <br><br>
+        <label for="comment">Comentario</label>
+        <br>
+        <textarea name="comment" id="comment" placeholder="Tu opinion es importante" rows="5" cols="40"></textarea>
+        <br><br>
+        <button type="submit">Enviar opinion</button>
+</form>
+<br><hr><br>
+<p>Formulario con lista de opciones seleccionables</p>
+<form action="/seleccion_bebidas" method="post">
+        <label for="bebidas">Bebidas</label>
+        <select name="bebidas" id="bebidas">
+            <option value="none" disabled selected> Selecciona una opcion</option>
+            <option value="Limonada">Limonada</option>
+            <option value="Agua">Agua</option>
+            <option value="Refresco">Refresco</option>
+            <option value="Malteada">Malteada</option>
+        </select>
+        <br><br>
+        <label for="postres">Postres</label>
+        <select name="postres" id="postres">
+            <option value="none" disabled selected> Selecciona una opcion</option>
+            <option value="Pastel">Pastel</option>
+            <option value="Helado">Helado</option>
+            <option value="Duraznos con crema">Duraznos con crema</option>
+            <option value="Pay">Pay</option>
+        </select>
+        <br><br>
+        <button type="submit">Ordenar</button>
+</form>
+<br><hr><br>
+<p>Formulario complejos con distintos campos de datos</p>
+<form action="/datos_usuario" method="post">
+    <fieldset>
+        <legend>Nombre completo</legend>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+        <label for="ap">Ap.Paterno</label>
+        <input type="text" id="am" name="am" required>
+        <br>
+        <label for="am">Ap.Materno</label>
+        <input type="text" id="am" name="am" required>        
+    </fieldset>
+    <fieldset>
+        <legend>Otros datos</legend>
+        <label for="fecha_nacimiento">Fecha de nacimiento</label>
+        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" required>
+        <br>
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="edad" required>
+        <br>
+        <label for="nc">Número de cuenta</label>
+        <input type="text" name="nc" id="nc" pattern="[0-9]{9}" inputmode="numeric" required>
+        <br>
+        <label for="ce">Correo electrónico</label>
+        <input type="email" name="ce" id="ce" required>
+    </fieldset>
+    <fieldset>
+        <legend>Dirección</legend>
+        <label for="calle">Calle</label>
+        <input type="text" name="calle" id="calle" required>
+        <br>
+        <label for="numero_casa">Numero</label>
+        <input type="text" name="numero_casa" id="numero_casa" required>
+        <br>
+        <label for="col">Colonia</label>
+        <input type="text" name="col" id="col" required>
+    </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
