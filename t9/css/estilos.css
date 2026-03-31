@@ -1,0 +1,32 @@
+#encabezado{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.fondo1{
+    /*Permite agregar una imagen de algo a un contenedor y gradientes de fondo (radiales y lineales)*/
+    background-image: url(../imagen/img1.jpg); /* background-size (cover,contain y width-height) especifica el tamaño de la imagen de fondo*/
+    background-size: 500px, 500px;
+    /*background-repeat y no repeat, repeat-x, repeat-y, aplica cuando la iamgen es más pequeña que el contenedor*/
+    background-repeat: no-repeat;
+    /*background-position establece la posicion de una imagen en su contenedor*/
+    background-position: center;
+    /*background-atachment se utiliza para que la imagen se quede fija en su contenedor cuando un usuario se desplaza por la página*/
+    
+    width: 600px;
+    height: 500px;
+    background-color: black;
+    color: white;
+    border: 5px solid coral;
+}
+.fondo2{
+    /*shorthand permiten abreviar una serie de propiedades en una regla de estilos*/
+    background: linear-gradient(to top, rgba(162, 156, 247, 0.35),rgba(240, 67, 67, 0.192)), url(../imagen/img2.webp) center/contain no-repeat scroll red;
+    background-color: black;
+    width: 600px;
+    height: 500px;
+    color: wheat;
+    border-width: 5px;
+    border-color: darkkhaki;
+    border: 5px solid darkkhaki;
+}

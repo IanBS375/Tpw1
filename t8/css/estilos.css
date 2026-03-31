@@ -1,0 +1,85 @@
+/*Modelos de color*/
+.crgb{
+    background-color: rgb(6, 72, 99) ;
+}
+.crgb h2{
+    color: rgb(241, 177, 177) ;
+}
+.crgb p{
+    color: rgb(96, 250, 109) ;
+}
+
+/*RGBA*/
+.rgba{
+    background-color: rgba(156, 4, 149, 0.7);
+    color: rgb(255, 255, 255);
+}
+.rgba h2{
+    color: rgba(255, 255, 255,1);
+}
+.rgba p{
+    color: rgb(109, 3, 3,0.9);
+}
+
+/*HEX*/
+.hex{
+    background-color: #14a3a3;
+}
+.hex h2{
+    color: #FF1235;
+}
+.hex p{
+    color: #a10247;
+}
+
+/*HSL*/
+.hsl{
+    background-color: hsl(34, 86%, 60%);
+    color: hsl(79, 90%, 85%);
+}
+.hsl h2{
+    color: hsl(79, 92%, 19%);
+}
+.hsl p{
+    color: hsl(328, 93%, 12%);
+}
+
+/*HSLA*/
+.hsla {
+    background-color: hsl(3, 84%, 10%,0.9);
+}
+.hsla h2{
+    color: hsla(233, 62%, 80%, 0.938);
+}
+.hsla p{
+    color: hsla(54, 92%, 66%, 0.9);
+}
+.lor{
+    background-color: lightskyblue;
+}
+.n{
+    color: black;
+}
+.b{
+    color: white;
+}
+.s{
+    color: salmon;
+}
+.a{
+    color: blue;
+}
+.v{
+    color: green;
+}
+.borde{
+    border-style: solid;
+    border-color: crimson;
+    border-width: 3.5px;
+}
+.dl{
+    background-image: linear-gradient(to top, pink,coral);
+}
+.dr{
+    background-image: radial-gradient(circle, lightgoldenrodyellow,pink);
+}
