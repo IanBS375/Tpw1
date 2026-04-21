@@ -1,0 +1,57 @@
+html{
+    font-size: 10px
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+/* Orden de estilos para enlaces ( */
+a:link{
+    color: rgb(69, 199, 188);
+}
+a:visited{
+    color: darkseagreen;
+}
+a:focus{
+    color: rgb(197, 255, 170);
+    background-color: crimson;
+    border: 0.2rem solid rgb(213, 255, 130);
+}
+a:hover{
+    color: darkgreen;
+    background-color: aliceblue;
+    border: 0.2rem solid black;
+}
+#encabezado{
+    background-color: darkred;
+    text-align: center;
+    color: aquamarine;
+}
+#encabezado h1{
+    font-size: 2.5rem;
+    text-shadow: 0.2rem 0.2rem lightpink;
+}
+.navegacion{
+    background-color: antiquewhite;
+}
+.estados-enlaces{
+    background-color: rgb(126, 248, 126);
+    color: crimson;
+    text-align: center;
+}
+.estados-enlaces h2{
+    text-align: center;
+}
+.estados-enlaces ul{
+    border: 1.5px solid black;
+}
+/*Estilos listas*/
+.estados-enlaces ul li{
+    border: 1px solid crimson;
+    list-style-type: georgian;
+    list-style-position: outside;
+}
+.estados-enlaces li{
+    margin: 2px;
+}
