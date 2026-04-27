@@ -1,0 +1,95 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(to bottom, lightyellow, orange);
+    color: crimson;
+}
+#encabezado{
+    border: 0.7rem solid black;
+    padding: 0%;
+    position: relative;
+    height: 12rem;
+    top: 0;
+    width: 100%;
+}
+
+#encabezado h1{
+    font-size: 3rem;
+    text-align: center;
+    color: blue;
+    margin-top: 4rem;
+}
+
+.logo{
+    border: 0.2rem solid crimson;
+    width: 10%;
+    height: 90%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.5rem;
+    left: 2rem;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#navegacion{
+    font-size: 1.5rem;
+    border: 0.5rem solid darkblue;
+    width: 30rem;
+    position: absolute;
+    right: 9rem;
+    top: 1.5rem;
+}
+
+#elementos-posicionamiento{
+    border: 0.2rem solid grey;
+    padding: 10rem;
+    position: absolue;
+    margin-top: 10rem;
+}
+.contenedor-imagen{
+    width: 20%;
+    height: 20%;
+    margin: 5px;
+    border: 0.5rem solid darkred;
+}
+.contenedor-imagen img{
+    width: 100%;
+    height: 100%;
+}
+
+.girasol{
+    position: absolute;
+    right: 5rem;
+}
+.coleo{
+    filter: invert(1);
+}
+.lirio{
+    position: sticky;
+    left: 40%;
+    top: 3rem;
+}
+.dahlia{
+    filter: contrast(5);
+}
+.araña{
+    position: absolute;
+    right: 5rem;
+    top: 92rem;
+    height: 25rem;
+}
+/*filter
+blur(em, rem, px) desenfoque
+brightness(0-1,1,1-5) brillo
+contrast(0-1,1,1-5) contraste
+grayscale(%) escala de grises
+invert( 0 sin cambios, 1 invierte colores)
+sepia(%) tono sepia */
