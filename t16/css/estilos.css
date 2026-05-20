@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: chocolate;
+    color: azure;
+}
+#encabezado{
+    font-size: 2rem;
+    display: flex;
+    grid-template-columns: 20rem;
+    justify-content: center;
+    align-content: center;
+}
+.grid-container{
+    border: 0.3rem solid crimson;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 20rem 20rem 20rem;
+    justify-content: space-between;
+    /*Propiedades de cuadricula (start, end, center, space-around, space-between, space-evenly)*/
+    justify-items: center;
+    align-items: center;
+}
+.grid-object{
+    margin: 0;
+    background-color: bisque;
+    height: 15rem;
+    width: 15rem;
+    color: brown;
+    /*Propiedades de objeto grid (start, end, center, space-around, space-between, space-evenly)*/
+}
+.grid-container2{
+    border: 0.2rem sold lightblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20rem 20rem 20rem;
+    justify-content:space-evenly;
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.grid-object2{
+    background-color: cadetblue;
+    height: 15rem;
+    width: 15rem;
+}
+
+.g21{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
